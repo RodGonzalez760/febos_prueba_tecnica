@@ -40,6 +40,22 @@
 
 ```
 
-	http://localhost:8080/
+	http://localhost:8088/
+
+```
+
+**Nota: En caso de que el puerto configurado se encuentre utilizado, favor detener la ejecucion de la aplicación ( ctrl + c ) y luego modificar el archivo vue.config.js en el siguiente valor: **
+
+```
+
+	port: numero_puerto_disponible
+
+```
+
+**Y volver a ejecutar el proyecto con :**
+
+```
+
+	npm run serve
 
 ```

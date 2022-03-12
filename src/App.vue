@@ -9,6 +9,7 @@
 
 <script>
 import FebosComponent from './components/FebosComponent.vue'
+import { devServer } from '../vue.config.js'
 import axios from 'axios'
 
 export default {
@@ -26,7 +27,10 @@ export default {
   },
   methods:{    
     async getmarkets() {
-      await axios.get('http://localhost:8080/api/v1.1/public/getmarketsummaries')
+      console.log( devServer.port )
+      let url = `http://localhost:${devServer.port}/api/v1.1/public/getmarketsummaries`
+      console.log(url)
+      await axios.get( url )
       .then( response => 
         this.marketSummaries = response.data.result
       ).catch(error => {
