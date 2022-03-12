@@ -9,14 +9,14 @@
 
 ```
 
-**Accedemos a la raíz del proyecto: **
+**Accedemos a la raíz del proyecto :**
 
 ```
 	cd febos_prueba_tecnica
 	
 ```
 
-**A continuación instalar las dependencias, abrimos una consola y ejecutamos: **
+**A continuación instalar las dependencias, abrimos una consola y ejecutamos :**
 
 ```
 
