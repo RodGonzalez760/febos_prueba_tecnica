@@ -1,17 +1,39 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app">    
+    <img alt="febos logo" src="./assets/logo_febos.png">
+    <FebosComponent 
+      :marketSummaries="marketSummaries"
+    />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import FebosComponent from './components/FebosComponent.vue'
+import axios from 'axios'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    FebosComponent
+  },
+  data () {
+    return {
+      marketSummaries: null
+    }
+  },
+  mounted () {
+    this.getmarkets()
+  },
+  methods:{    
+    async getmarkets() {
+      await axios.get('http://localhost:8080/api/v1.1/public/getmarketsummaries')
+      .then( response => 
+        this.marketSummaries = response.data.result
+      ).catch(error => {
+        console.log(error)
+      })
+    },
+
   }
 }
 </script>

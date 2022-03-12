@@ -1,24 +1,40 @@
-# febos
 
-## Project setup
-```
-npm install
-```
+# Prueba técnica para FullStack Developer en Febos
 
-### Compiles and hot-reloads for development
-```
-npm run serve
+**En Primer lugar clonar el repositorio desde :**
+
 ```
 
-### Compiles and minifies for production
-```
-npm run build
+	git@github.com:RodGonzalez760/febos_prueba_tecnica.git  
+
 ```
 
-### Lints and fixes files
-```
-npm run lint
+  
+
+**A continuación instalar las dependencias, para esto debemos abrir la consola desde la raíz del proyecto y ejecutar :**
+
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+	npm install
+
+```
+
+  
+
+### Ejecutar el proyecto con :
+
+```
+
+	npm run serve
+
+```
+
+  
+
+**Una vez ejecutado el proyecto abrir el navegador e ingresar a la url local**
+
+```
+
+	http://localhost:8080/
+
+```
