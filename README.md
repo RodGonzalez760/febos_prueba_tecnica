@@ -5,13 +5,18 @@
 
 ```
 
-	git@github.com:RodGonzalez760/febos_prueba_tecnica.git  
+	git clone git@github.com:RodGonzalez760/febos_prueba_tecnica.git  
 
 ```
 
-  
+**Accedemos a la raíz del proyecto:
 
-**A continuación instalar las dependencias, para esto debemos abrir la consola desde la raíz del proyecto y ejecutar :**
+```
+	cd febos_prueba_tecnica
+	
+```
+
+**A continuación instalar las dependencias, abrimos una consola y ejecutamos : **
 
 ```
 
@@ -21,7 +26,7 @@
 
   
 
-### Ejecutar el proyecto con :
+### Sin cerrar la consola levantamos la aplicación con :
 
 ```
 
