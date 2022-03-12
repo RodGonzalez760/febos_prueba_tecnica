@@ -118,6 +118,7 @@
 </template>
 
 <script>
+import { devServer } from '../../vue.config.js'
 import axios from 'axios'
 export default {
   name: 'FebosComponent',  
@@ -268,9 +269,8 @@ export default {
       this.modalData = []
       this.modalMarketName = ''
       this.openModal = true
-
-      let url = `http://localhost:8080/api/v1.1/public/getticker?market=${marketName}` 
-
+      let url = `http://localhost:${devServer.port}/api/v1.1/public/getticker?market=${marketName}`
+      console.log(url)
       await axios.get(url)
         .then( response => (        
             this.modalData = response.data.result,
